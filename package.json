@@ -4,7 +4,9 @@
   "description": "Checks a list of to do items to determine if the project is ready for release.",
   "main": "index.js",
   "scripts": {
-    "test": "kavun `bash -c 'ls src/*.spec.js'` --reporter=minimal"
+    "test": "kavun `bash -c 'ls src/*.spec.js'` --reporter=minimal",
+    "releasable": "npm test && node -r esm ./src/check-todo-list.js",
+    "release": "npm version major"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/wolframkriesing/to-do-list-checker#readme",
   "devDependencies": {
+    "esm": "^3.0.84",
     "kavun": "^3.0.0"
   }
 }

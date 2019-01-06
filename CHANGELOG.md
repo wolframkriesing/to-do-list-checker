@@ -2,4 +2,5 @@
 - [ ] ???
 
 # version 1.0
-- [ ] make it releaseable
+- [x] make it releaseable
+- [x] move the actual code here
