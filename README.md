@@ -1,6 +1,8 @@
 # To do list checker
 
 Checks a list of to do items to determine if the project is ready for release.
+Sounds weird? Read [some details](#releasing) of what I mean by that and how this changed
+the way I develop.
 
 ## Development
 
