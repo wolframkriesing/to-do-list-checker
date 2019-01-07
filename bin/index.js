@@ -4,9 +4,10 @@ import path from 'path';
 import { parseChangelog, LINE_START_FOR_TODO } from '../src/parse-changelog.js';
 
 const WORKING_DIR = process.cwd();
-const CHANGELOG_FILENAME = path.join(WORKING_DIR, './CHANGELOG.md');
+const FILE_NAME = process.argv[2] || './CHANGELOG.md';
+const CHANGELOG_FILENAME = path.join(WORKING_DIR, FILE_NAME);
 if (!fs.existsSync(CHANGELOG_FILENAME)) {
-  console.log(`Could NOT find file "CHANGELOG.md" in ${WORKING_DIR}.`);
+  console.log(`Could NOT find file "${FILE_NAME}" in ${WORKING_DIR}.`);
   process.exit(-1);
 }
 
