@@ -2,7 +2,8 @@
 - [ ] ???
 
 # version 2.0
-- [ ] describe what this project is for
+- [x] describe what this project is for
+- [x] provide an executable
 
 # version 1.0
 - [x] make it releaseable
