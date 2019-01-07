@@ -1,8 +1,14 @@
+#!/usr/bin/env node -r esm
 import fs from 'fs';
 import path from 'path';
-import { parseChangelog, LINE_START_FOR_TODO } from './parse-changelog.js';
+import { parseChangelog, LINE_START_FOR_TODO } from '../src/parse-changelog.js';
 
-const CHANGELOG_FILENAME = path.join(__dirname, '../CHANGELOG.md');
+const WORKING_DIR = process.cwd();
+const CHANGELOG_FILENAME = path.join(WORKING_DIR, './CHANGELOG.md');
+if (!fs.existsSync(CHANGELOG_FILENAME)) {
+  console.log(`Could NOT find file "CHANGELOG.md" in ${WORKING_DIR}.`);
+  process.exit(-1);
+}
 
 const changelog = fs.readFileSync(CHANGELOG_FILENAME, 'utf-8');
 const {version, items: notYetDone} = parseChangelog(changelog);

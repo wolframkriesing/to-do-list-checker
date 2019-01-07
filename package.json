@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Checks a list of to do items to determine if the project is ready for release.",
   "main": "index.js",
+  "bin": "bin/index.js",
   "scripts": {
     "test": "kavun `bash -c 'ls src/*.spec.js'` --reporter=minimal",
     "releasable": "npm test && node -r esm ./src/check-todo-list.js",
