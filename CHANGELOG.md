@@ -1,9 +1,11 @@
 # Ideas
 - [ ] ???
-
-# version 4.0
 - [ ] add command to generate an example`CHANGELOG.md` file
 - [ ] add command to the according npm scripts, so releasing is made easy
+
+# version 4.0
+- [x] move to node v11
+- [ ] prevent need for esm by projects that require this one
 
 # version 3.0
 - [x] Allow passing the (CHANGELOG.md) file name to be parsed.
