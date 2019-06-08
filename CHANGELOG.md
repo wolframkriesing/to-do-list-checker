@@ -4,7 +4,7 @@
 
 # version 4.0
 - [x] move to node v11
-- [ ] prevent need for esm by projects that require this one
+- [x] prevent need for esm by projects that require this one
 
 # version 3.0
 - [x] Allow passing the (CHANGELOG.md) file name to be parsed.
