@@ -38,7 +38,8 @@ is your to-do list! What, to-do list? Yes. See below how and why?
 
 To release a new version run `npm run release` (not `npm version`!), this will include the
 checks described and do the release and versioning (read more below).
-To make it public on npm run `npm publish`.
+To make it public on npm run `npm publish`, if you have permissions on this project the new
+version might go live.
 
 ## Recommended Development Process
 
