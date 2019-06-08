@@ -1,5 +1,4 @@
 # Ideas
-- [ ] ???
 - [ ] add command to generate an example`CHANGELOG.md` file
 - [ ] add command to the according npm scripts, so releasing is made easy
 
