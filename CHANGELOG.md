@@ -2,6 +2,12 @@
 - [ ] add command to generate an example`CHANGELOG.md` file
 - [ ] add command to the according npm scripts, so releasing is made easy
 
+# version 5.0
+- [x] move development to use docker (nix is just not used anywhere by anyone)
+- [ ] fix bug in tests2text
+- [ ] document usage in README
+- [ ] initialize CHANGELOG.md on first run
+
 # version 4.0
 - [x] move to node v11
 - [x] prevent need for esm by projects that require this one
