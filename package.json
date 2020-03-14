@@ -6,7 +6,7 @@
   "bin": "bin/index.js",
   "scripts": {
     "test": "kavun `bash -c 'ls src/*.spec.js'` --reporter=minimal",
-    "releasable": "npm test && node -r esm ./src/check-todo-list.js",
+    "releasable": "npm test && node -r esm ./src/parse-changelog.js",
     "release": "npm version major"
   },
   "repository": {
