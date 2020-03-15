@@ -9,7 +9,8 @@
     "releasable": "npm test && node -r esm ./bin/index.js",
     "release": "npm version major",
     "typecheck": "tsc",
-    "dev:typecheck": "npm run typecheck -- --watch"
+    "dev:typecheck": "npm run typecheck -- --watch",
+    "dev:test": "while true; do sleep 5; clear; npm run test --silent; done"
   },
   "repository": {
     "type": "git",
