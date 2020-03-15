@@ -1,6 +1,8 @@
 # Ideas
 - [ ] add command to generate an example`CHANGELOG.md` file
 - [ ] add command to the according npm scripts, so releasing is made easy
+- [ ] typing: and/or maybe we want a `Result` returned from the parse function, which is either ok or not
+      instead of the `{version: -1}` as we have it now
 
 # version 5.0
 - [x] move development to use docker (nix is just not used anywhere by anyone)
