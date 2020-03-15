@@ -10,8 +10,7 @@
   - [ ] the bug was not using `# version X` but `# vX` as headline, which is not really a bug
         show a warning and a hint when not finding the appropriate string
     - [x] prevent a parsing error to throw    
-  - [ ] to give the structure of the parsed text a meaning make it typed a bit better
-        maybe even use TS for typing and have a `Result` from the parsing process        
+  - [x] to give the structure of the parsed text a meaning make it typed a bit better
 - [ ] document usage in README
 - [ ] initialize CHANGELOG.md on first run
 - [ ] rename the project to something more useful and shorter, easier to spell and remember, not even I can remember the name
