@@ -12,6 +12,7 @@
         maybe even use TS for typing and have a `Result` from the parsing process        
 - [ ] document usage in README
 - [ ] initialize CHANGELOG.md on first run
+- [ ] rename the project to something more useful and shorter, easier to spell and remember, not even I can remember the name
 
 # version 4.0
 - [x] move to node v11
