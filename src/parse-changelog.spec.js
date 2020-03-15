@@ -32,6 +32,15 @@ describe('Parse a CHANGELOG.md', () => {
       const empty = '\n\n# version 2\n\n- [ ] one item\n- [ ] two items\n- [ ] three items\n\n';
       assert.deepEqual(parseChangelog(empty), { version: 2, items: ['one item', 'two items', 'three items'] });
     });
+    it('AND items with different indentations THEN return the todo-items', () => {
+      const lines = [
+        '# version 1',
+        '- [ ] to do',
+        '  - [ ] indented to do',
+      ];
+      const parsed = parseChangelog(lines.join('\n'));
+      assert.deepEqual(parsed, { version: 1, items: ['to do', 'indented to do'] });
+    });
   });
   describe('WHEN it contains multiple "version lines"', () => {
     it('AND items THEN return only the first version found', () => {

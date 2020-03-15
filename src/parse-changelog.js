@@ -6,10 +6,18 @@ export const LINE_START_FOR_TODO = '- [ ]';
  * @returns {string[]}
  */
 const todoItems = (content) => {
+  /**
+   * @param {string} line
+   * @returns {string}
+   */
+  const todoItem = (line) => {
+    const startsAt = line.indexOf(LINE_START_FOR_TODO) + LINE_START_FOR_TODO.length + 1;
+    return line.substr(startsAt);
+  };
   return content
     .split('\n')
-    .filter(line => line.startsWith(LINE_START_FOR_TODO))
-    .map(line => line.substr(LINE_START_FOR_TODO.length + 1))
+    .filter(line => line.trim().startsWith(LINE_START_FOR_TODO))
+    .map(todoItem)
   ;
 };
 
