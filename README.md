@@ -20,6 +20,7 @@ globally just leave out `./run.sh`.
 - `cd <here>`
 - `./run.sh npm i` to install all dependencies
 - `./run.sh npm test` to run all the tests
+- `./run.sh npm run typecheck` to verify that all types are correct
 - develop ...
 
 ## Releasing

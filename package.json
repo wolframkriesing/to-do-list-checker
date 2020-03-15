@@ -7,7 +7,8 @@
   "scripts": {
     "test": "kavun `bash -c 'ls src/*.spec.js'` --reporter=minimal",
     "releasable": "npm test && node -r esm ./src/parse-changelog.js",
-    "release": "npm version major"
+    "release": "npm version major",
+    "typecheck": "tsc"
   },
   "repository": {
     "type": "git",
