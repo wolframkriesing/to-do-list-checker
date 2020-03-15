@@ -14,6 +14,9 @@ export const parseChangelog = (changelogContent) => {
   if (!hasContent) {
     return { version: -1, items: [] };
   }
+  if (!changelogContent.includes(LINE_START_FOR_NEW_VERSION)) {
+    return { version: -1, items: [] };
+  }
   const versions = changelogContent.split(LINE_START_FOR_NEW_VERSION);
   const firstVersionParagraph = versions[1];
   const version = firstVersionParagraph.split('\n')[0];

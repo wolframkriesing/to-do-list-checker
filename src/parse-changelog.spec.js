@@ -50,4 +50,10 @@ describe('Parse a CHANGELOG.md', () => {
       assert.deepEqual(parseChangelog(empty), { version: 2, items: ['1st item'] });
     });
   });
+  describe('WHEN no version line is found', () => {
+    it('THEN return no info', () => {
+      const invalidVersion = '# v1';
+      assert.deepEqual(parseChangelog(invalidVersion), { version: -1, items: [] });
+    });
+  });
 });
