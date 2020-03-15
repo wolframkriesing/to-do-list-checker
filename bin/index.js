@@ -1,6 +1,6 @@
 #!/usr/bin/env node -r esm
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 import { parseChangelog, LINE_START_FOR_TODO } from '../src/parse-changelog.js';
 
 const WORKING_DIR = process.cwd();

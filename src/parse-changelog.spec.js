@@ -1,5 +1,5 @@
 import {describe, it} from 'kavun';
-import assert from 'assert';
+import * as assert from 'assert';
 import { parseChangelog } from './parse-changelog.js';
 
 describe('Parse a CHANGELOG.md', () => {
