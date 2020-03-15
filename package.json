@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/wolframkriesing/to-do-list-checker#readme",
   "devDependencies": {
-    "kavun": "^3.0.0"
+    "kavun": "^3.0.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "esm": "^3.2.25"
