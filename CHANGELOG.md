@@ -4,7 +4,7 @@
 
 # version 5.0
 - [x] move development to use docker (nix is just not used anywhere by anyone)
-- [ ] fix bug in tests2text
+- [ ] fix bug in tests2text, it throws `split called on undefined`
   - [ ] the bug was not using `# version X` but `# vX` as headline, which is not really a bug
         show a warning and a hint when not finding the appropriate string
     - [x] prevent a parsing error to throw    
@@ -13,6 +13,7 @@
 - [ ] document usage in README
 - [ ] initialize CHANGELOG.md on first run
 - [ ] rename the project to something more useful and shorter, easier to spell and remember, not even I can remember the name
+- [ ] BUG: the nested items (see above) are not properly understood yet
 
 # version 4.0
 - [x] move to node v11
