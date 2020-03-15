@@ -1,17 +1,21 @@
 export const LINE_START_FOR_NEW_VERSION = '# version ';
 export const LINE_START_FOR_TODO = '- [ ]';
 
+/**
+ * @param {string} content
+ * @returns {string[]}
+ */
 const todoItems = (content) => {
   return content
     .split('\n')
     .filter(line => line.startsWith(LINE_START_FOR_TODO))
     .map(line => line.substr(LINE_START_FOR_TODO.length + 1))
-    ;
+  ;
 };
 
 /**
  * @param {string} changelogContent
- * @returns {{version: number, items: []}}
+ * @returns {{version: number, items: string[]}}
  */
 export const parseChangelog = (changelogContent) => {
   const hasContent = !!changelogContent.trim();
