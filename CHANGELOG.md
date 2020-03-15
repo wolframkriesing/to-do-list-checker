@@ -14,6 +14,7 @@
 - [ ] initialize CHANGELOG.md on first run
 - [ ] rename the project to something more useful and shorter, easier to spell and remember, not even I can remember the name
 - [x] BUG: the nested items (see above) are not properly understood yet
+- [x] BUG: when `# version X` shows up like here, it makes the logic fail
 
 # version 4.0
 - [x] move to node v11

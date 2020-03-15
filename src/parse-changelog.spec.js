@@ -41,6 +41,14 @@ describe('Parse a CHANGELOG.md', () => {
       const parsed = parseChangelog(lines.join('\n'));
       assert.deepEqual(parsed, { version: 1, items: ['to do', 'indented to do'] });
     });
+    it('AND a todo item contains the headline string THEN ignore it and still return the item (used to be broken)', () => {
+      const lines = [
+        '# version 1',
+        '- [ ] `# version 1` broke before',
+      ];
+      const parsed = parseChangelog(lines.join('\n'));
+      assert.deepEqual(parsed.items, ['`# version 1` broke before']);
+    });
   });
   describe('WHEN it contains multiple "version lines"', () => {
     it('AND items THEN return only the first version found', () => {
