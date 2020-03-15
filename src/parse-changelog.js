@@ -23,7 +23,7 @@ const todoItems = (content) => {
 
 /**
  * @param {string} changelogContent
- * @returns {{version: number, items: string[]}}
+ * @returns {import("./parse-changelog").TodoItems}
  */
 export const parseChangelog = (changelogContent) => {
   const hasContent = !!changelogContent.trim();
