@@ -9,6 +9,10 @@ const todoItems = (content) => {
     ;
 };
 
+/**
+ * @param {string} changelogContent
+ * @returns {{version: number, items: []}}
+ */
 export const parseChangelog = (changelogContent) => {
   const hasContent = !!changelogContent.trim();
   if (!hasContent) {
