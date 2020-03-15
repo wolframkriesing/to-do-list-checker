@@ -1,5 +1,5 @@
 type TodoItems = {
-    version: number,
+    version: string,
     items: string[]
 }
 

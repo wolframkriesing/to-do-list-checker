@@ -15,6 +15,7 @@
 - [ ] rename the project to something more useful and shorter, easier to spell and remember, not even I can remember the name
 - [x] BUG: the nested items (see above) are not properly understood yet
 - [x] BUG: when `# version X` shows up like here, it makes the logic fail
+- [x] version can also be a string (like "1.0-beta"), not just a number (see type `TodoItems.version`)
 
 # version 4.0
 - [x] move to node v11
